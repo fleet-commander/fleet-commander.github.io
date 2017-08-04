@@ -35,7 +35,7 @@ description: Manage your large GNOME deployments with ease.
         %p
           After installing the package you should be able to check the plugin by running the following commands in a domain enrolled machine:
 
-        %code
+        %pre
           $ kinit admin
           Password for admin@FC.IPA:
           $ ipa deskprofileconfig-show
@@ -58,7 +58,8 @@ description: Manage your large GNOME deployments with ease.
           $ sudo systemctl start cockpit
         %p
           At this point, you should be able to access the cockpit interface in your browser.
-        %img
+        %p
+          =image_tag "img/screenshots/01_cockpit_login_screen.png"
         %p
           Next step is to install fleet-commander-admin package:
         %pre
@@ -73,14 +74,16 @@ description: Manage your large GNOME deployments with ease.
           Login with domain credentials for a user with administrative access or with access to desktop profiles management. Otherwise, you will not be able to use Fleet Commander Admin.
         %p
           Click on the Fleet Commander option at cockpit sidebar, and you will see Fleet Commander loading screen.
-        %img
+        %p
+          =image_tag "img/screenshots/02_fc_loading_screen.png"
         %p
           The first time you use Fleet Commander, you will need to wait a few seconds to allow Fleet Commander Admin to set up the environment for the application. Please be patient.
 
         %h3 Configure Fleet Commander
         %p
           If this is the first time you’re using Fleet Commander you will be prompted to configure the global policy and libvirt host information for Fleet Commander.
-        %img
+        %p
+          =image_tag "img/screenshots/03_fc_settings.png"
         %p
           You can access the settings using the Settings button.
 
@@ -122,7 +125,9 @@ description: Manage your large GNOME deployments with ease.
           You can add and remove profiles using the `Add Profile` button.
         %p
           The screenshot below shows the profile list that contains all profiles you have created. Profiles can be edited or removed using the `Edit` and `Remove` buttons.
-        %img
+        %p
+          =image_tag "img/screenshots/04_fc_main_screen.png"
+
         %p
           When you add or edit a profile, this is the information you can set up:
         %ul
@@ -142,18 +147,22 @@ description: Manage your large GNOME deployments with ease.
             Host Groups: same as Hosts, but for groups of hosts
         %p
           If you do not select any host or hostgroup for your profile, it will apply to every host in your domain.
-        %img
+        %p
+          =image_tag "img/screenshots/05_editing_profile.png"
 
         %h3 Using live sessions
         %p
           We will assume you have a working virtual environment host set up. If not, see [[#configure_libvirt_host|Configure libvirt host]]
         %p
           When editing a profile, simply click on the `Live session` button. You will get a list of available VMs you can use as a template. If you don't see any VMs, you may need to add some - see [[#managing_template_vms|Managing template VMs]].
-        %img
+        %p
+          =image_tag "img/screenshots/06_virtual_machines_list.png"
         %p
           Clicking a VM will launch a volatile clone of it. Since the clone is volatile, all changes to the VM will be discarded on shutdown, meaning you can experiment without the fear of messing up the template VM.
         %p
           After you've made some changes, click on the `Review and submit` button and select the changes you want to add to the profile.
+        %p
+          =image_tag "img/screenshots/07_live_session_change_review.png"
 
         %h3 Managing Template VMs
         %p
