@@ -6,7 +6,7 @@ description: Manage your large GNOME deployments with ease.
   .header-content
     .container
     .row
-      .col-lg-6.col-lg-offset-3.text-center
+      .animated-logo.col-lg-6.col-lg-offset-3.text-center
         =partial "animated-logo.svg"
         :css
           #button {
@@ -69,18 +69,18 @@ description: Manage your large GNOME deployments with ease.
     .header-content-inner
       %h1 Massive desktop configuration made easy
       %hr
-        %p
-          Having worked with many organizations over the years who deploy
-          =link_to "Fedora", "https://getfedora.org/"
-          or
-          =link_to "Red Hat Desktops", "https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-workstation#?sku=RH3482727"
-          on a large scale we realized there was a clear gap in the tools we offered sysadmins. Fleet Commander builds on existing Red Hat lead development efforts such as the
-          =link_to "Cockpit", "http://cockpit-project.org/"
-          administration tools and the
-          =link_to "FreeIPA", "https://www.freeipa.org/page/Main_Page"
-          suite of LDAP tools. With the help of Fleet Commander you should be able to adminster hunders or thousands of Linux desktops with ease.
-        %p
-          %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out How
+      %p
+        Having worked with many organizations over the years who deploy
+        =link_to "Fedora", "https://getfedora.org/"
+        or
+        =link_to "Red Hat Desktops", "https://www.redhat.com/en/store/red-hat-enterprise-linux-developer-workstation#?sku=RH3482727"
+        on a large scale we realized there was a clear gap in the tools we offered sysadmins. Fleet Commander builds on existing Red Hat lead development efforts such as the
+        =link_to "Cockpit", "http://cockpit-project.org/"
+        administration tools and the
+        =link_to "FreeIPA", "https://www.freeipa.org/page/Main_Page"
+        suite of LDAP tools. With the help of Fleet Commander you should be able to adminster hunders or thousands of Linux desktops with ease.
+      %p
+        %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out How
 
 %section#about.bg-primary
   .container
@@ -123,7 +123,8 @@ description: Manage your large GNOME deployments with ease.
         %hr.primary
         %p
           Fleet Commander is Free Software and is developed in the open. To get in touch, use the
-          %em #fleet-commander IRC channel on Freenode.
+          %em #fleet-commander
+          IRC channel on Freenode.
         %p
           Code can be found on
           =link_to "Github", "https://github.com/fleet-commander"
