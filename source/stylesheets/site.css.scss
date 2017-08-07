@@ -164,6 +164,11 @@ header .header-content {
   width: 100%;
   padding: 30px 15px;
   text-align: center;
+
+  .row {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 header .header-content .header-content-inner h1 {
@@ -171,6 +176,7 @@ header .header-content .header-content-inner h1 {
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: large;
 }
 
 header .header-content .header-content-inner hr {
@@ -178,15 +184,15 @@ header .header-content .header-content-inner hr {
 }
 
 header .header-content .header-content-inner p {
-  margin-bottom: 50px;
-  font-size: 16px;
+  margin-bottom: 20px;
+  font-size: 12px;
   font-weight: 300;
   color: #000;
 }
 
 .animated-logo * {
   text-align: center;
-  max-width: 500px;
+  max-width: 450px;
   margin: 0;
 }
 
@@ -593,7 +599,7 @@ table {
     margin-right: auto;
     margin-left: auto;
     max-width: 80%;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
