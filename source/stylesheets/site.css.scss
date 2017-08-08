@@ -331,8 +331,8 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   border-color: darken($key_color,10%);
-  color: $key_color;
-  background-color: #fff;
+  color: #fff;
+  background-color: $key_color;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
