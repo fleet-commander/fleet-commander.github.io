@@ -68,6 +68,7 @@ description: Manage your large GNOME deployments with ease.
           }
     .header-content-inner
       %h1 Massive desktop configuration made easy
+      %h4 Seamlessly connect with your FreeIPA or Active Directory environment
       %hr
       %p
         Having worked with many organizations over the years who deploy
@@ -86,7 +87,13 @@ description: Manage your large GNOME deployments with ease.
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading Fleet commander is a tool to manage and deploy desktop profiles across a large network of users and workstations/laptops.
+        %h2.section-heading 
+          Fleet commander is a tool to manage and deploy desktop profiles across large networks under 
+          %strong
+            FreeIPA
+          or
+          %strong Active Directory
+          \.
         %hr.light
     .row
       .col-lg-12.text-center
@@ -102,14 +109,16 @@ description: Manage your large GNOME deployments with ease.
         %h1.section-heading.text-center Getting Fleet Commander
         %hr.primary
         %p
+          Fleet Commander requires a FreeIPA or Active Directory service to work with and to store the desktop profiles.
+        %p
           Fleet Commander consists of three components:
         %ul
           %li
-            a FreeIPA plugin that allows to store profiles into your domain controller,
+            The Fleet Commander Admin, a cockpit plugin and a service that manages all the desktop profiles in FreeIPA or Active Directory servers.
           %li
-            a Cockpit plugin that serves the administration, interface
+            The Fleet Commander Logger. Installed on your template VMs to set up the profiles realtime from Fleet Commander Admin Live Session.
           %li
-            a client side service that runs on every host of the network.
+            The Fleet Commander Client, a client side service that runs on every host of the network and that applies the desktop profiles when the user logs in.
         %p
           Fleet Commander uses libvirt and KVM to run a virtual desktop session that allows the user to live edit the configuration of the applications on a template system that resembles the client setup.
         .text-center
