@@ -1,3 +1,5 @@
 #!/bin/bash
 
-docker exec -ti fc-web bundle exec middleman build
+CONTAINER_COMMAND=podman
+
+$CONTAINER_COMMAND exec -ti fc-web bundle exec middleman build
