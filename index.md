@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Fleet commander](https://github.com/fleet-commander) is a tool to manage and deploy desktop profiles across large networks under [FreeIPA](https://www.freeipa.org/page/Main_Page) or [Active Director](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/d2435927-0999-4c62-8c6d-13ba31a52e1a?redirectedfrom=MSDN).
+[Fleet commander](https://github.com/fleet-commander) is a tool to manage and deploy desktop profiles across large networks under [FreeIPA](https://www.freeipa.org/page/Main_Page) or [Active Directory](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/d2435927-0999-4c62-8c6d-13ba31a52e1a?redirectedfrom=MSDN).
 
 ---
 
