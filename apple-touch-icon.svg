@@ -6,7 +6,7 @@
    id="svg14"
    sodipodi:docname="apple-touch-icon.svg"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   inkscape:export-filename="/home/jimmac/src/git/gnome/toolbox/apple-touch-icon.png"
+   inkscape:export-filename="/var/home/jimmac/src/git/gnome/fleet-commander.github.io/apple-touch-icon.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -70,15 +70,6 @@
      style="font-variation-settings:normal;vector-effect:none;fill:#ff7800;fill-opacity:1;stroke-width:1.00001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
      rx="90"
      ry="90" />
-  <rect
-     style="fill:#3295ca;fill-opacity:1;stroke-linecap:round;stroke-linejoin:round"
-     id="rect942"
-     width="15.3125"
-     height="0.6640625"
-     x="249.68359"
-     y="165.78516"
-     rx="33.75"
-     ry="0.6640625" />
   <path
      style="fill:#ffffff;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 114.9912,124.99502 -35,-84.999992 -34.999994,84.999992 H 69.9912 l 10.000002,-69.999997 -2e-6,84.999997 10,-15 z"
