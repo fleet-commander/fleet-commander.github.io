@@ -1,7 +1,14 @@
-/* shamelessy steal systemd concept and stylesheet 
-   https://github.com/systemd/systemd/tree/main/docs
+/* 
+
+    OS Component Website
+    ====================
+    
+    shamelessy stolen CSS from systemd 
+    https://github.com/systemd/systemd/tree/main/docs
+    
 */
 
+/* GNOME Color Palette */
 :root {
   --rounded-corner: 12px;
   --blue1: rgb(153,193,241);
@@ -49,7 +56,7 @@
   --dark3: rgb(61,56,70);
   --dark4: rgb(36,31,49);
   --dark5: rgb(0,0,0);
-  --primary-color: var(--orange5);
+  --primary-color: var(--orange5); /* Set your project color */
   --borders: var(--light3);
 }
 
@@ -81,26 +88,42 @@ body {
   background-color: #f6f5f4;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin: 1rem 0 10px;
+  margin: 3rem 0 1rem;
   font-weight: 600;
   line-height: 1.25;
   font-variation-settings: "wght" 600; /* needed for webkit */
 }
+
 h1 {
   font-size: 30px;
   font-weight: 100;
   font-style: normal;
-  margin: 3em 0 2rem;
+  margin: 3rem 0 2rem;
 }
+
 @media screen and (min-width: 650px) {
   h1 {
     font-size: 38px;
   }
 }
 h2 {
-  margin-top: 3rem;
   font-size: 1.2rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+
+  html {
+    background-color: var(--dark5);
+  }
+
+  img, video, iframe {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+}
+
 a {
   font-weight: 600;
   text-decoration: none;
@@ -128,6 +151,12 @@ img {
   margin: 2rem auto;
   max-width: 100%;
   }
+  img.full { width: 100%; }
+  img.pixels { 
+    image-rendering: crisp-edges; /* older firefox browsers */ 
+    image-rendering: pixelated; 
+  }
+
 
 /* Layout */
 .container {
@@ -138,14 +167,31 @@ img {
 }
 
 /* Singletons */
-.page-logo {
+#logo {
   display: block;
+  width: 251px; height: 26px;
+  background: url('assets/page-logo.svg') no-repeat center;
   padding: 5rem 0 3rem;
+  margin: 0 auto;
+  position: relative;
 }
+  #logo a {
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    color: rgba(0,0,0,0); /* make text transparent */
+    cursor: pointer;
+  }
 .page-logo > img {
-  display: block;
   margin: 0 auto;
 }
+
+  @media (prefers-color-scheme: dark) {
+    a.page-logo {
+      filter: invert(100%) hue-rotate(180deg); /* uninvert */
+      background-image: url('assets/page-logo-i.svg');
+    }
+  }
 
 .brand-white {
   background-color: #fff;
@@ -163,7 +209,6 @@ img {
 .page-link::after {
   content: " ➜";
 }
-
 
 
 /* Footer */
