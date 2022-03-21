@@ -4,7 +4,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://fleet-commander.org" # the base hostname & protocol for your site
 sourceurl: "https://github.com/fleet-commander/fleet-commander.github.io"
 description: "Fleet Commander: Deploy Desktops Easily"
-
+issuesurl: "https://github.com/fleet-commander/fleet-commander.github.io/issues"
 permalink: /:title/
 
 # Build settings
